@@ -15,7 +15,10 @@
          <children>
             <HBox prefHeight="52.0" prefWidth="341.0">
                <children>
-                  <TextField alignment="CENTER_RIGHT" prefHeight="47.0" prefWidth="320.0" />
+                  <TextField fx:id="scoreTextField" alignment="CENTER_RIGHT" prefHeight="47.0" prefWidth="320.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></TextField>
                </children>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -23,23 +26,23 @@
             </HBox>
             <HBox prefHeight="63.0" prefWidth="341.0" spacing="5.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="\%">
+                  <Button fx:id="percentButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="\%">
                      <font>
                         <Font size="18.0" />
                      </font></Button>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="CE">
+                  <Button fx:id="ceButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="CE">
                      <font>
                         <Font size="18.0" />
                      </font></Button>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="C">
+                  <Button fx:id="cButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="C">
                      <font>
                         <Font size="18.0" />
                      </font></Button>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="⌫">
+                  <Button fx:id="backspaceButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="⌫">
                      <font>
                         <Font size="18.0" />
                      </font></Button>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="÷">
+                  <Button fx:id="divideButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="÷">
                      <font>
                         <Font size="18.0" />
                      </font></Button>
@@ -50,32 +53,32 @@
             </HBox>
             <HBox layoutX="10.0" layoutY="62.0" prefHeight="63.0" prefWidth="341.0" spacing="5.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="√">
+                  <Button fx:id="radicalButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="√">
                      <font>
                         <Font size="18.0" />
                      </font></Button>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="7">
+                  <Button fx:id="sevenButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="7">
                      <font>
                         <Font size="18.0" />
                      </font>
                      <effect>
                         <ColorAdjust contrast="0.25" />
                      </effect></Button>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="8">
+                  <Button fx:id="eightButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="8">
                      <font>
                         <Font size="18.0" />
                      </font>
                      <effect>
                         <ColorAdjust contrast="0.25" />
                      </effect></Button>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="9">
+                  <Button fx:id="nineButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="9">
                      <font>
                         <Font size="18.0" />
                      </font>
                      <effect>
                         <ColorAdjust contrast="0.25" />
                      </effect></Button>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="x">
+                  <Button fx:id="multiButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="x">
                      <font>
                         <Font size="18.0" />
                      </font></Button>
@@ -86,32 +89,32 @@
             </HBox>
             <HBox layoutX="10.0" layoutY="125.0" prefHeight="63.0" prefWidth="341.0" spacing="5.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="x²">
+                  <Button fx:id="squaredXButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="x²">
                      <font>
                         <Font size="18.0" />
                      </font></Button>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="4">
+                  <Button fx:id="fourButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="4">
                      <font>
                         <Font size="18.0" />
                      </font>
                      <effect>
                         <ColorAdjust contrast="0.25" />
                      </effect></Button>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="5">
+                  <Button fx:id="fiveButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="5">
                      <font>
                         <Font size="18.0" />
                      </font>
                      <effect>
                         <ColorAdjust contrast="0.25" />
                      </effect></Button>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="6">
+                  <Button fx:id="sixButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="6">
                      <font>
                         <Font size="18.0" />
                      </font>
                      <effect>
                         <ColorAdjust contrast="0.25" />
                      </effect></Button>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="-">
+                  <Button fx:id="minusButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="-">
                      <font>
                         <Font size="18.0" />
                      </font></Button>
@@ -122,32 +125,32 @@
             </HBox>
             <HBox layoutX="10.0" layoutY="188.0" prefHeight="63.0" prefWidth="341.0" spacing="5.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="x³">
+                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="x³" fx:id="xPower3Button">
                      <font>
                         <Font size="18.0" />
                      </font></Button>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="1">
+                  <Button fx:id="oneButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="1">
                      <font>
                         <Font size="18.0" />
                      </font>
                      <effect>
                         <ColorAdjust contrast="0.25" />
                      </effect></Button>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="2">
+                  <Button fx:id="twoButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="2">
                      <font>
                         <Font size="18.0" />
                      </font>
                      <effect>
                         <ColorAdjust contrast="0.25" />
                      </effect></Button>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="3">
+                  <Button fx:id="threeButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="3">
                      <font>
                         <Font size="18.0" />
                      </font>
                      <effect>
                         <ColorAdjust contrast="0.25" />
                      </effect></Button>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="+">
+                  <Button fx:id="plusButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="+">
                      <font>
                         <Font size="18.0" />
                      </font></Button>
@@ -158,26 +161,26 @@
             </HBox>
             <HBox layoutX="10.0" layoutY="251.0" prefHeight="63.0" prefWidth="341.0" spacing="5.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="1/x">
+                  <Button fx:id="oneForXButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="1/x">
                      <font>
                         <Font size="18.0" />
                      </font></Button>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="±">
+                  <Button fx:id="plusMinusButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="±">
                      <font>
                         <Font size="18.0" />
                      </font></Button>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="0">
+                  <Button fx:id="zeroButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="0">
                      <font>
                         <Font size="18.0" />
                      </font>
                      <effect>
                         <ColorAdjust contrast="0.25" />
                      </effect></Button>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text=",">
+                  <Button fx:id="pointButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text=",">
                      <font>
                         <Font size="18.0" />
                      </font></Button>
-                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="=">
+                  <Button fx:id="equalButton" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="=">
                      <font>
                         <Font size="18.0" />
                      </font></Button>
